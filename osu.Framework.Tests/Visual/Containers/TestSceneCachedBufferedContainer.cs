@@ -1,6 +1,8 @@
 ﻿// Copyright (c) ppy Pty Ltd <contact@ppy.sh>. Licensed under the MIT Licence.
 // See the LICENCE file in the repository root for full licence text.
 
+#nullable disable
+
 using System.Collections.Generic;
 using osu.Framework.Graphics;
 using osu.Framework.Graphics.Containers;
@@ -147,7 +149,7 @@ namespace osu.Framework.Tests.Visual.Containers
             private readonly bool newChild;
             private readonly SpriteText count;
 
-            private Drawable child = null;
+            private Drawable child;
 
             public CountingBox(
                 bool rotating = false,
